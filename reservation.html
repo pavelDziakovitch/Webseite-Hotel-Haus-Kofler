@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link href="style.css" rel="stylesheet" type="text/css">
+	<link href="img/favicon.ico" rel="shortcut icon" type="image/x-icon">
+	<script src="hidenavbar.js">
+	</script>
+	<title>Haus Kofler</title>
+</head>
+<body class="bluring">
+	<div id="layout">
+		<ul id="menuHeader">
+			<li class="menuSelectors">
+				<a href="index.html"><nobr>Startseite</nobr></a>
+				<ul></ul>
+			</li>
+			<li class="menuSelectors">
+				<a href="roomprices.html"><nobr>Preise & Zimmer</nobr></a>
+				<ul></ul>
+			</li>
+			<li class="menuSelectors">
+				<a href="hikes.html"><nobr>Aktivitäten</nobr></a>
+				<ul></ul>
+			</li>
+			<li class="menuSelectors" style="background-color: rgba(17, 131, 55, 0.993); color:white">Reservieren
+				<ul></ul>
+			</li>
+			<li class="menuSelectors">
+				<a href=""><nobr>Info</nobr></a>
+				<ul>
+					<li id="dropDown">Anfahrt</li>
+					<li id="dropDown">Kosten</li>
+					<li id="dropDown">Shopping</li>
+				</ul>
+			</li>
+		</ul>
+		<div class="contentOther">
+			<form method="post" target="">
+				<p id="ueberschrift">Reservierungsanfrage</p><br>
+				<p id="text">Wir freuen uns über Ihr Interesse.<br>
+				<br>
+				Sie können mit dem oben angezeigten Formular<br>
+				bei uns ein Zimmer reservieren oder alternativ unter +43 650 99 35 817<br>
+				oder per <a href="mailto:dziakovitch.pavel@gmx.at" style="text-decoration: underline;">E-Mail</a><br>
+				<br>
+				Schreiben Sie uns von wann bis wann Sie reservieren möchten,<br>
+				wir bearbeiten die Anfrage und antworten Ihnen schnellstmöglich.<br>
+				<br></p><input id="willBeChanged" placeholder="Vorname" type="text"> <input id="willBeChanged" placeholder="Nachname" type="text"><br>
+				<input id="willBeChanged" placeholder="E-Mail Adresse" type="email"> <input id="willBeChanged" placeholder="Telefonnummer" type="tel"><br>
+				<input id="willBeChanged" onfocus="(this.type = 'date')" placeholder="Anreise" type="text"> <input id="willBeChanged" onfocus="(this.type = 'date')" placeholder="Abreise" type="text"><br>
+				<input placeholder="Sonstige Angaben" style="height: 200px; width: 90%;" type="text">
+				<p id="roomChoiceText">Zimmerwunsch?</p>
+                <div id="Roomchoice">
+                    <label><input type="checkbox" id=cb /><div id="cbResult"><nobr>Einzelbett-Zimmer</nobr></div></label>
+                    <label><input type="checkbox" id=cb2 /><div id="cb2Result"><nobr>Doppelbett-Zimmer</nobr></div></label>
+                    <label><input type="checkbox" id=cb3 /><div id="cb3Result"><nobr>Apartment</nobr></div></label>
+                    </div>
+                <input style="background-color: rgba(17, 131, 55, 0.993);color: white; font-weight: bold;" type="submit" value="Anfrage absenden">
+			</form>
+		</div>
+		<footer id="footer">
+			<a class="footerChild" href="imprint.html">Impressum</a> <a class="footerChild" href="dsgvo.html">DSGVO</a>
+		</footer>
+	</div>
+</body>
+</html>

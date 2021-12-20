@@ -1,0 +1,474 @@
+@import url('https://fonts.googleapis.com/css2?family=Quintessential&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+#textIndex {
+	font-weight: bolder;
+}
+p {
+	font-family: "Libre Baskerville";
+	font-size: 17px;
+	margin: 0;
+}
+#ueberschrift {
+	font-family: "Quintessential", cursive;
+	font-size: 45px;
+	margin: 0%;
+	font-weight: bold;
+	color: rgb(17, 131, 55);
+}
+#text {
+	font-family: "Libre Baskerville";
+	font-size: 14px;
+	margin-top: 0.5%;
+	font-weight: bold;
+}
+#klein {
+	font-family: "Libre Baskerville";
+	font-size: 9px;
+	margin-top: 0.5%;
+}
+body {
+	background: url("img/Kofler_BG.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin: 0px;
+	min-height: 300px;
+}
+.bluring {
+	background: url("img/Kofler_BG_blur.jpg");
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+#menuHeader {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	background-color: rgba(245, 241, 241, 0.932);
+	justify-content: space-evenly;
+	width: 60%;
+	border-bottom: 1px solid green;
+	position: fixed;
+	top: 0;
+	left: 20%;
+	z-index: 99;
+	transition: top 0.3s;
+}
+.menuSelectors:hover {
+	background-color: rgba(17, 131, 55, 0.993);
+}
+.menuSelectors:hover a {
+	color: white;
+}
+.menuSelectors a {
+	color: black;
+}
+.menuSelectors {
+	display: flex;
+	flex-basis: 20%;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s all ease-out;
+	color: black;
+}
+.menuSelectors {
+	display: flex;
+	flex-basis: 20%;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	transition: 0.5s all ease-out;
+}
+#layout {
+	display: flex;
+	width: 100%;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-items: center;
+}
+ul {
+	margin-block-start: 0;
+	margin-block-end: 0em;
+	padding-inline-start: 0px;
+}
+ul li {
+	list-style: none;
+	line-height: 41px;
+	position: relative;
+}
+li.menuSelectors {
+	height: 40px;
+	font-size: 17px;
+	font-weight: bold;
+	font-family: "Lora", serif;
+}
+.logo {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	z-index: 1;
+}
+#kofler {
+	margin-top: 12%;
+	margin-bottom: 1%;
+	max-width: 650px;
+	height: auto;
+	position: relative;
+}
+.beautiful {
+	font-family: 'Quintessential', cursive;
+	margin-top: 3%;
+	margin-bottom: 2%;
+	font-weight: bold;
+	font-size: 70px;
+	color: rgba(17, 131, 55, 0.993);
+}
+.content {
+	background-color: rgba(245, 241, 241, 0.767);
+	width: 60%;
+	min-height: 300px;
+	border-radius: 20px;
+	border: 2px solid green;
+	text-align: center;
+}
+.contentOther {
+	background-color: rgba(245, 241, 241, 0.705);
+	width: 100%;
+	min-height: 300px;
+	margin-top: 4%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+}
+.socialMedia {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-around;
+	width: 20%;
+	margin-bottom: 0.5%;
+}
+a {
+	color: rgba(17, 131, 55, 0.993);
+	text-decoration: none;
+}
+#icons {
+	width: 60px;
+	height: 60px;
+}
+#footer {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+	width: 30%;
+	position: relative;
+	height: 30px;
+	bottom: 0;
+	transition: bottom 0.2s ease-in-out;
+	border-radius: 5px;
+	background-color: rgba(245, 241, 241, 0.829);
+	margin-top: 1%;
+	margin-bottom: 1%;
+}
+.footerChild {
+	display: flex;
+	flex-basis: 50%;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	width: 100%;
+	line-height: 31px;
+	font-weight: bold;
+	text-decoration: none;
+	border-radius: 5px;
+}
+.footerChild:hover {
+	background-color: rgba(17, 131, 55, 0.993);
+	color: white;
+}
+#prices {
+	margin-top: 1%;
+	text-align: center;
+	width: 70%;
+	border-spacing: 0;
+	border-collapse: collapse;
+}
+td, tr {
+	width: 50%;
+	padding: 0%;
+}
+.roomPics {
+	border-radius: 20px;
+	width: 100%;
+	height: 10%;
+}
+input {
+	margin: 10px;
+	padding: 0;
+	display: inline-flex;
+	position: relative;
+}
+form {
+	text-align: center;
+}
+#cb:checked~#cbResult, #cb2:checked~#cb2Result, #cb3:checked~#cb3Result {
+	color: rgba(0, 0, 0, 0.993);
+	font-weight: bold;
+	font-size: 20px;
+	;
+}
+label {
+	display: flex;
+	margin-right: 2%;
+	margin-left: 2%;
+}
+#cb, #cb2, #cb3 {
+	margin: 15px;
+}
+#cbResult, #cb2Result, #cb3Result {
+	position: relative;
+	height: 40px;
+	line-height: 40px;
+	vertical-align: middle;
+	font-size: 20px;
+}
+h2 {
+	color: rgba(13, 100, 42, 0.993)
+}
+h1 {
+	color: rgba(3, 107, 38, 0.993)
+}
+#hidden {
+	display: none;
+}
+input {
+	font-size: 18px;
+	text-align: center;
+}
+table {
+	margin-bottom: 1%;
+}
+#dropDown {
+	display: flex;
+	font-weight: bold;
+	height: 30px;
+	background-color: white;
+	color: black;
+	justify-content: center;
+	align-items: center;
+	font-size: 14px;
+}
+#dropDown:hover {
+	background-color: rgba(12, 163, 62, 0.781);
+	color: white;
+}
+ul li ul {
+	display: none;
+	position: relative;
+	margin: 0;
+	width: 100%;
+}
+ul li:hover ul {
+	display: block;
+}
+#maps{
+    height:300px;
+    width:50%;
+    margin-top: 4%;
+}
+#traveldestinationImg{
+    margin-top:2%;
+    margin-bottom: 2%;
+}
+#roomChoiceText{
+    margin-top:2%;
+    margin-bottom: 2%;
+    font-size: 20px;
+    font-weight: bold;
+}
+@media screen and (max-width: 1150px){
+	#menuHeader {
+		flex-direction: column;
+		justify-content: left;
+		align-items: flex-start;
+		position: relative;
+		left: 0%;
+		align-self: center;
+		width: 40%;
+        border:0;
+        
+	}
+	.menuSelectors {
+		width: 100%;
+        border-bottom: 1px solid rgba(12, 163, 62, 0.781);
+	}
+	#kofler {
+		margin-top: 4%;
+	}
+	#textIndex {
+		font-size: 12px;
+	}
+	#text {
+		font-size: 14px;
+	}
+	p {
+		font-size: 11px;
+	}
+	li.menuSelectors {
+		font-weight: normal;
+		font-size: 24px;
+	}
+	.beautiful {
+		font-size: 60px;
+	}
+	#willBeChanged {
+		height: 40px;
+		width: 40%;
+	}
+	.content {
+		width: 90%;
+	}
+	.footerChild {
+		font-size: 20px;
+	}
+	h2, h1 {
+		font-size: 28px;
+	}
+	::placeholder {
+		text-align: center;
+		font-size: 22px;
+	}
+	#cbResult, #cb2Result, #cb3Result {
+		font-size: 20px;
+	}
+	form {
+		width: 80%;
+	}
+	input {
+		font-size: 24px;
+	}
+	#prices {
+		width: 95%;
+		display: none;
+	}
+	#hidden {
+		margin: 2%;
+		display: block;
+	}
+	.roomPics {
+		width: 70%;
+		height: auto;
+	}
+    #dropDown{
+    font-size: 20px;
+    }
+    #maps{
+        width: 90%;
+    }
+    #traveldestinationImg{
+        width: 400px;
+        height: auto;
+    }
+}
+@media screen and (max-width: 600px) {
+	#menuHeader {
+		flex-direction: column;
+		position: relative;
+		left: 0%;
+		width: 90%;
+        border-bottom: 0;
+	}
+	.menuSelectors {
+		width: 100%;
+        line-height:25px;
+	}
+	#kofler {
+		margin-top: 4%;
+        width: 250px;
+        height: auto;
+	}
+	#textIndex{
+		font-size: 12px;
+	}
+	#text {
+		font-size: 12px;
+	}
+    #ueberschrift{
+		font-size: 20px;        
+    }
+    #klein{
+        border-bottom: 1px solid rgba(12, 163, 62, 0.781);
+    }
+	li.menuSelectors{
+		font-size: 25px;
+        font-weight: normal;
+        border-bottom: 1px solid rgba(12, 163, 62, 0.781);
+	}
+	.beautiful {
+		font-size: 30px;
+	}
+	#willBeChanged {
+		height: 30px;
+		width: 40%;
+	}
+	.content {
+		width: 90%;
+	}
+    #footer{
+        width: 80%;
+    }
+	.footerChild {
+		font-size: 12px;
+	}
+	h2, h1 {
+		font-size: 18px;
+	}
+	::placeholder {
+		text-align: center;
+		font-size: 18px;
+	}
+	#cbResult, #cb2Result, #cb3Result {
+		font-size: 18px;
+	}
+    #cb:checked~#cbResult, #cb2:checked~#cb2Result, #cb3:checked~#cb3Result {
+        color: rgba(0, 0, 0, 0.993);
+        font-weight: bold;
+        font-size: 20px;
+    }
+    #cb, #cb2, #cb3 {
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+    }
+	form {
+		width: 100%;
+	}
+	input {
+		font-size: 24px;
+	}
+    #prices {
+		width: 95%;
+		display: none;
+	}
+	#hidden {
+		margin: 2%;
+		display: block;
+	}
+	.roomPics {
+		width: 70%;
+		height: auto;
+	}
+    #dropDown{
+    font-size: 20px;
+    }
+    #traveldestinationImg{
+        width: 250px;
+        height: auto;
+    }
+}
